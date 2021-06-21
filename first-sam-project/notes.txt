@@ -21,3 +21,6 @@ sam logs --name <function-name> --stack-name <stack-name> --region <region-name>
 
 # To run locally:
 sam local start-api
+
+# Clean
+aws cloudformation delete-stack --stack-name <stack-name>

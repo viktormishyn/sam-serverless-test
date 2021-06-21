@@ -13,6 +13,6 @@ codeuri = "/home/asdf/Desktop/sam-serverless-test/first-sam-project/clock"
 runtime = "nodejs14.x"
 source_md5 = ""
 packagetype = "Zip"
-functions = ["ClockFunction"]
+functions = ["ClockFunction", "TimeZoneClockFunction"]
 
 [layer_build_definitions]

@@ -33,6 +33,18 @@ Resources:
           Properties:
             Path: /clock
             Method: get
+  TimeZoneClockFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: TimeZoneClockFunction
+      Handler: handler.timeZoneClock
+      Runtime: nodejs14.x
+      Events:
+        ClockApi:
+          Type: Api
+          Properties:
+            Path: /timezone-clock
+            Method: get
 Outputs:
   HelloWorldApi:
     Description: API Gateway endpoint URL for Prod stage for Hello World function
