@@ -1,8 +1,10 @@
 sam init --runtime nodejs14.x
 
-When creating function folder we should initialize npm inside this folder (to create package.json):
+# When creating function folder we should initialize npm inside this folder (to create package.json):
 npm init -y
 npm install --save moment
 
+# To make project build:
+sam build
 
 
