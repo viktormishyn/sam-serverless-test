@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "first-sam-py-project"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-w0p2e4ov1tq8"
+s3_prefix = "first-sam-py-project"
+region = "eu-central-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"

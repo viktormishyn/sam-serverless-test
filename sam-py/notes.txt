@@ -5,3 +5,12 @@ sam init
 
 sam build
 # create .aws-sam directory with build package (containing function packages with requirements and CF template.yaml)
+
+(pip3 install awscli)
+aws configure
+
+sam deploy --guided
+# create and deploy CF stack changeset
+# after deploy information about created s3 bucket, stack, region etc. will be stored in samconfig.toml
+
+---------------------------------------------------------
