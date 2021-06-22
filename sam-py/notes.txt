@@ -1,4 +1,7 @@
 python3 -m venv env
-pip install aws-sam-cli
+pip3 install aws-sam-cli
 
 sam init
+
+sam build
+# create .aws-sam directory with build package (containing function packages with requirements and CF template.yaml)
